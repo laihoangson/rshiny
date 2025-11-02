@@ -1,0 +1,63 @@
+---
+title: "Introduction to the Quarantine Breach Data"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Introduction to the Quarantine Breach Data}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+This package contains three datasets related to COVID-19 quarantine breaches in Australia.
+
+## Loading the Data
+
+To get started, load the package. Once loaded, you can access the datasets directly.
+
+```{r, message=FALSE, warning=FALSE}
+library(quarantine)
+library(ggplot2)
+library(dplyr)
+```
+
+## The Breaches Dataset
+
+The `breaches_data` tibble contains information on individual breach events.
+
+```{r}
+head(breaches_data)
+```
+
+## The Cases Summary
+
+The `cases_data` tibble provides a summary of breaches and overseas cases by state.
+
+```{r}
+head(cases_data)
+```
+
+## Visualization examples
+
+```{r}
+#| fig-width: 5
+# Breaches by state
+breach_summary <- breaches_data %>%
+  group_by(state) %>%
+  summarise(
+    n_breaches = n(),
+    n_onward = sum(onward, na.rm = TRUE)
+  ) %>%
+  arrange(desc(n_breaches))
+
+ggplot(breach_summary, aes(x = reorder(state, -n_breaches), y = n_breaches)) +
+  geom_col(fill = "steelblue") +
+  labs(title = "Quarantine Breaches by Australian State",
+       x = "State", y = "Number of Breaches") +
+  theme_minimal()
+```

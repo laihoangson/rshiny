@@ -1,0 +1,15 @@
+# _pkgdown.yml
+
+url: https://YOUR-GITHUB-USERNAME.github.io/YOUR-REPO-NAME/
+template:
+  bootstrap: 5
+  bootswatch: flatly
+
+navbar:
+  left:
+    - icon: fa-home fa-lg
+      href: index.html
+    - text: "Functions"
+      href: reference/index.html
+    - text: "Introduction (Vignette)"
+      href: articles/introduction.html
