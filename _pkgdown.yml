@@ -1,6 +1,6 @@
 # _pkgdown.yml
 
-url: https://YOUR-GITHUB-USERNAME.github.io/YOUR-REPO-NAME/
+url: https://laihoangson.github.io/rshiny/
 template:
   bootstrap: 5
   bootswatch: flatly
