@@ -12,7 +12,7 @@ with:
 
 ``` r
 # install.packages("remotes")
-remotes::install_github("YOUR-GITHUB-USERNAME/YOUR-REPO-NAME")
+remotes::install_github("laihoangson/rshiny")
 ```
 
 ## Example Usage
@@ -34,4 +34,5 @@ head(breaches_data)
 
 A full documentation website created with **pkgdown** is available
 here:  
-👉 *LINK TO YOUR PKGDOWN SITE (You will add this link in Part C).*
+
+[https://laihoangson.github.io/rshiny/](https://laihoangson.github.io/rshiny/)
