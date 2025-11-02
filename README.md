@@ -32,7 +32,6 @@ head(breaches_data)
 
 ## Documentation Website
 
-A full documentation website created with **pkgdown** is available
-here:  
+A full documentation website created with **pkgdown** is available here:
 
-[https://laihoangson.github.io/rshiny/](https://laihoangson.github.io/rshiny/)
+<https://laihoangson.github.io/rshiny/>
