@@ -3,7 +3,7 @@ pkgdown: 2.1.3
 pkgdown_sha: ~
 articles:
   introduction: introduction.html
-last_built: 2025-10-31T15:53Z
+last_built: 2025-11-02T14:11Z
 urls:
-  reference: https://YOUR-GITHUB-USERNAME.github.io/YOUR-REPO-NAME/reference
-  article: https://YOUR-GITHUB-USERNAME.github.io/YOUR-REPO-NAME/articles
+  reference: https://laihoangson.github.io/rshiny/reference
+  article: https://laihoangson.github.io/rshiny/articles
